@@ -77,7 +77,7 @@ const fetchUsers = () => {
       })
       .catch(error => {
         //error message is the error description
-        dispatch(fetchUsersFailure(error));
+        dispatch(fetchUsersFailure(error.message));
       });
   };
 };
